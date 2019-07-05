@@ -18,6 +18,7 @@ export class TimerService {
 
   getSystemTime() {
     const today = new Date();
+    console.log(today);
     return today.getHours() * 3600 + today.getMinutes() * 60 + today.getSeconds();
   }
 
