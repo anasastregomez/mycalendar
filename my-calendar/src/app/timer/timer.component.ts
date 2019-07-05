@@ -13,6 +13,7 @@ export class TimerComponent implements OnInit, OnDestroy {
   secondsValue: string;
 
   constructor(private timerService: TimerService) { 
+    this.secondsValue = this.timerService.getSystemTime().toString();
     this.suscribeTimerService();
   }
 
